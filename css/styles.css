@@ -1,0 +1,65 @@
+/* 
+    Nuestro fichero de CSS 
+    Mobile First width < 576px
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+}
+
+h1 {
+    color: teal;
+}
+
+main:before{
+    content: "Mobile-Firts";
+}
+
+.col, .col-sm {
+    border: 1px solid black;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #e83e8c;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    main:before{
+        content: "Small devices 576px";
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    main:before{
+        content: "Medium devices 768px";
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    main:before{
+        content: "Large devices 992px";
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    main:before{
+        content: "Extra Large devices 1200px";
+    }
+}

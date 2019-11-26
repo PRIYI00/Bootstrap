@@ -15,7 +15,7 @@ main:before{
     content: "Mobile-Firts";
 }
 
-.col, .col-sm {
+.row div[class^="col"] {
     border: 1px solid black;
     background-color: lightgray;
     padding: 20px;
